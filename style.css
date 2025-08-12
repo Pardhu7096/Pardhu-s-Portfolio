@@ -1,0 +1,212 @@
+*{
+    scroll-behavior: smooth;
+    position: relative;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+:root{
+  --brand: #0d6efd;          /* primary */
+  --brand-accent: #00b4d8;   /* accent */
+  --chip-bg: #f8f9fa;        /* badge bg */
+  --chip-border: #e2e6ea;    /* badge border */
+  --chip-text: #0b2239;      /* dark text */
+}
+.navbar .nav-link.active {
+  color: #0d6efd !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link :hover {
+    color: #0d6efd !important;
+
+}
+
+.nav-item {
+    float: right;
+    margin-left: 80px;
+    padding-left: 50px;
+}
+.nav-link {
+    color: #bf1d1d !important;
+}
+#navbarNav {
+    margin-right: 50px;
+}
+#header {
+    margin-top: 70px;
+}
+#header h1 {
+    font-size: 3rem;
+}
+#header p {
+    font-size: 1.5rem;
+}
+#projects .card {
+    margin-bottom: 30px;
+}
+/* Make the banner tall and cropped nicely */
+.hero-banner{
+  height: 100vh;
+  object-fit: cover;      /* fills width, crops edges */
+}
+.full-bleed{
+  width: 100vw;
+  position: relative;
+  left: 50%; right: 50%;
+  margin-left: -50vw; margin-right: -50vw;
+}
+
+#about{
+  background-color:#f8f9fa;
+  padding:40px 0;       /* keep spacing */
+  /* remove height:80vh; */
+}
+.card-equal .card { height: 100%; }
+  .card .btn-group .btn { --bs-btn-padding-y: .3rem; --bs-btn-padding-x: .6rem; }
+
+  .project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* consistent shape */
+  object-fit: cover;       /* crop to fill the box */
+  border-top-left-radius: .375rem; /* match Bootstrap card radius */
+  border-top-right-radius: .375rem;
+}
+.project-img { 
+    height: clamp(180px, 22vw, 260px);
+     object-fit: cover; width: 100%;
+     }
+
+.work-img{ width:100%;
+     aspect-ratio:16/9;
+      object-fit:cover; border-radius:.25rem;
+       margin-bottom:.5rem;
+       height:clamp(180px, 22vw, 260px);
+       }
+.tech-badges .badge{ font-weight:500; }
+
+.work-img{ width:50%; aspect-ratio:16/9; object-fit:cover; border-radius:.25rem; margin-bottom:.5rem; }
+.tech-badges .badge{ font-weight:500; }
+#work-experience ul li { margin-left: 1.1rem; } /* nicer bullets */
+
+.about-avatar{
+  width: 180px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--bs-primary);
+}
+.about-avatar{ width:180px; aspect-ratio:1/1;
+     object-fit:cover; border-radius:50%; 
+     border:3px solid var(--bs-primary); }
+#about .btn{ margin-top:20px; }
+
+/* ===== Skill badges ===== */
+.skill-badge{
+  display:inline-flex; align-items:center; gap:.35rem;
+  padding:.4rem .6rem;
+  border:1px solid var(--chip-border);
+  border-radius:999px;
+  background:var(--chip-bg);
+  color:var(--chip-text);
+  font-weight:600; font-size:.9rem;
+  line-height:1; text-decoration:none;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease, color .18s ease;
+}
+.skill-badge i{ font-size:1rem; }
+
+/* Hover / focus */
+.skill-badge:hover,
+.skill-badge:focus{
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(13,110,253,.15);
+  border-color:var(--brand);
+  background:linear-gradient(180deg, #fff, #f3f6ff);
+  color:#0a2642;
+  outline:none;
+}
+
+/* Accessibility: reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce){
+  .skill-badge{ transition:none; }
+}
+
+/* ===== Progress bars on brand ===== */
+.progress{ height:.6rem; background:#ecf1f6; border-radius:999px; }
+.progress-bar{
+  background:linear-gradient(90deg, var(--brand), var(--brand-accent));
+  border-radius:999px;
+}
+
+/* Keep sections from crowding each other, esp. on mobile */
+@media (max-width: 576px){
+  #about { padding-bottom: 1rem; }
+  #skills { padding-top: .75rem; }
+}
+
+.skill-badges { display: flex; flex-wrap: wrap; }
+.skill-badge{
+  display:inline-flex; align-items:center; gap:.35rem;
+  padding:.4rem .6rem;
+  border:1px solid var(--chip-border, #e2e6ea);
+  border-radius:999px;
+  background:var(--chip-bg, #f8f9fa);
+  color:var(--chip-text, #0b2239);
+  font-weight:600; font-size:.9rem; line-height:1;
+  white-space: nowrap;  /* keep each badge on one line */
+  flex: 0 1 auto;       /* allow wrapping without squishing */
+}
+
+/* Limit hover lift to non-touch devices to avoid sticky :hover */
+@media (hover: hover) and (pointer: fine){
+  .skill-badge:hover, .skill-badge:focus{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(13,110,253,.15);
+    border-color: #0d6efd;
+  }
+}
+
+/* Add space under the About action buttons */
+.about-actions { margin-bottom: 1.25rem; }
+
+/* Ensure headings don't hide under fixed navbar when anchored */
+section[id] { scroll-margin-top: 80px; }
+
+/* Make skill badges wrap cleanly on small screens */
+#skills .d-flex.flex-wrap { gap: .5rem .5rem; } /* extra row/column gap */
+.skill-badge { white-space: nowrap; }           /* keep each badge on one line */
+
+/* Disable hover “lift” on touch so badges don’t overlap */
+@media (hover: none) {
+  .skill-badge { transform: none !important; box-shadow: none !important; }
+}
+
+@media (min-width: 992px){
+  #about{ min-height: 60vh; }
+}
+
+/* Tiny spacing so sections don't collide on mobile */
+@media (max-width: 576px){
+  #about { margin-bottom: 1rem; }
+  #skills { margin-top: .5rem; }
+}
+
+
+
+/* Skills: tidy wrapping and spacing */
+#skills .d-flex.flex-wrap { gap: .5rem .5rem; }
+.skill-badge { white-space: nowrap; flex: 0 1 auto; }
+
+/* Prevent sticky hover on touch, which can cause overlap */
+@media (hover: none) {
+  .skill-badge { transform: none !important; box-shadow: none !important; }
+}
+
+/* Stack Frontend/Backend columns and slightly shrink badges on small screens */
+@media (max-width: 767.98px){
+  #skills .col-md-6 { flex: 0 0 100%; max-width: 100%; }
+  .skill-badge { font-size: .875rem; padding: .35rem .55rem; }
+  #skills { margin-top: .5rem; }
+}
