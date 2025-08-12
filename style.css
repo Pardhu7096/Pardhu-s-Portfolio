@@ -47,6 +47,45 @@ body {
 #projects .card {
     margin-bottom: 30px;
 }
+.hero{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+
+  background-image: url("./assets/BackgroundImage.png");
+  background-repeat: no-repeat;
+
+  min-height: clamp(260px, 55vh, 520px);
+  padding: clamp(1.5rem, 4vw, 3rem) 1rem;  /* breathing room on small screens */
+}
+
+/* Subtle dark overlay so white text is readable on any photo */
+.hero::before{
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35));
+}
+
+/* Keep text above the overlay */
+.hero .container{ position: relative; z-index: 1; }
+
+/* Responsive, non-overflowing text */
+.hero-title{
+  font-size: clamp(1.5rem, 6vw, 3rem);
+  line-height: 1.15;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.hero-subtitle{
+  font-size: clamp(1rem, 3.2vw, 1.25rem);
+}
+
+/* Make sure anchored scroll doesn't hide content behind fixed navbar */
+section[id], header#home { scroll-margin-top: 90px; }
+
 /* Make the banner tall and cropped nicely */
 .hero-banner{
   height: 100vh;

@@ -1,380 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pardhu's-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#home">Pardhu's Portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#work-experience">Work Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Pardhu's Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work-experience">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="hero text-white text-center">
+      <div class="container py-5">
+        <p class="small text-uppercase mb-2 opacity-75">MERN Stack Developer</p>
+        <h1 class="hero-title fw-bold mb-1">Pardha Saradhi Tanakala</h1>
+        <p class="hero-subtitle lead mb-0">Explore my projects and skills</p>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+          <a href="#projects" class="btn btn-light btn-sm">View Projects</a>
+          <a href="#contact" class="btn btn-outline-light btn-sm">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="container my-6">
+      <h2>About Me</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4 text-center">
+          <!-- Optional profile photo -->
+          <img
+            src="./assets/Pardhu-Profile.jpeg"
+            alt="Portrait of Pardha Saradhi Tanakala"
+            class="about-avatar img-fluid"
+          />
+        </div>
+
+        <div class="col-lg-8">
+          <p>
+            I’m <strong>Pardha Saradhi Tanakala</strong>, a full-stack developer
+            focused on building scalable, user-friendly web apps with the
+            <strong>MERN</strong> stack. I care about clean UI, accessible UX,
+            and performance—turning requirements into reliable, production-ready
+            features.
+          </p>
+
+          <p>
+            Recently, I’ve been sharpening my skills in component design, API
+            development, and testing. I enjoy collaborating with teams, writing
+            maintainable code, and deploying apps that are easy to monitor and
+            iterate on.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="mb-3">
+                <li>
+                  <strong>Core Stack:</strong> React, Node.js, Express, MongoDB
+                </li>
+                <li>
+                  <strong>Front-end:</strong> HTML5, CSS3, Bootstrap, responsive
+                  design
+                </li>
+                <li>
+                  <strong>Back-end:</strong> REST APIs, auth with JWT, data
+                  modeling
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="mb-3">
+                <li>
+                  <strong>Quality:</strong> Jest testing, code reviews, perf
+                  tuning
+                </li>
+                <li><strong>Tools:</strong> Git/GitHub, Postman, VS Code</li>
+                <li>
+                  <strong>Current Focus:</strong> Netlify/Vercel deploys, CI/CD,
+                  Docker basics
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
+            <a
+              class="btn btn-primary btn-sm"
+              href="./assets/Pardha_Saradhi_Tanakala_Resume.pdf"
+              target="_blank"
+              rel="noopener"
+              >Download Resume</a
+            >
+            <a
+              class="btn btn-outline-secondary btn-sm"
+              href="mailto:pardhutanakala321@gmail.com"
+              >Email Me</a
+            >
+            <a
+              class="btn btn-outline-secondary btn-sm"
+              href="https://github.com/Pardhu7096"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >
+            <a
+              class="btn btn-outline-secondary btn-sm"
+              href="https://www.linkedin.com/in/pardha-saradhi-tanakala-93049a333"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container my-5">
+      <h2>Skills</h2>
+
+      <div class="row g-4">
+        <!-- Frontend -->
+        <div class="col-md-6">
+          <h6 class="text-uppercase text-muted mb-2">Frontend</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="skill-badge" title="HTML5"
+              ><i class="bi bi-filetype-html"></i> HTML5</span
+            >
+            <span class="skill-badge" title="CSS3"
+              ><i class="bi bi-filetype-css"></i> CSS3</span
+            >
+            <span class="skill-badge" title="JavaScript ES6+"
+              ><i class="bi bi-braces"></i> JavaScript (ES6+)</span
+            >
+            <span class="skill-badge" title="React"
+              ><i class="bi bi-react"></i> React</span
+            >
+            <span class="skill-badge" title="Bootstrap"
+              ><i class="bi bi-bootstrap-fill"></i> Bootstrap</span
+            >
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="col-md-6">
+          <h6 class="text-uppercase text-muted mb-2">Backend</h6>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="skill-badge" title="Node.js"
+              ><i class="bi bi-node-plus"></i> Node.js</span
+            >
+            <span class="skill-badge" title="Express.js"
+              ><i class="bi bi-diagram-3"></i> Express</span
+            >
+            <span class="skill-badge" title="MongoDB"
+              ><i class="bi bi-database"></i> MongoDB</span
+            >
+            <span class="skill-badge" title="JWT Auth"
+              ><i class="bi bi-shield-lock"></i> JWT</span
+            >
+            <span class="skill-badge" title="Git & GitHub"
+              ><i class="bi bi-git"></i> Git/GitHub</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Proficiency bars -->
+      <div class="mt-4">
+        <h6 class="text-uppercase text-muted mb-2">Proficiency</h6>
+
+        <div class="mb-3">
+          <small class="d-flex justify-content-between"
+            ><span>React</span><span>80%</span></small
+          >
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="React proficiency"
+          >
+            <div class="progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <small class="d-flex justify-content-between"
+            ><span>Node.js</span><span>75%</span></small
+          >
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Node.js proficiency"
+          >
+            <div class="progress-bar" style="width: 75%"></div>
+          </div>
+        </div>
+
+        <div class="mb-1">
+          <small class="d-flex justify-content-between"
+            ><span>MongoDB</span><span>70%</span></small
+          >
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="MongoDB proficiency"
+          >
+            <div class="progress-bar" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-experience" class="container my-5">
+      <h2>Work Experience</h2>
+      <ul class="list-group">
+        <!-- UI/UX Designer Trainee -->
+        <li class="list-group-item">
+          <img
+            src="./assets/TMF.jpeg"
+            alt="Tech Mahindra Foundation – UI/UX Designer Trainee"
+            class="img-fluid work-img"
+          />
+          <h5>UI/UX Designer Trainee</h5>
+          <p><strong>Feb 2021 – Nov 2021</strong></p>
+          <p>Tech Mahindra Foundation – Visakhapatnam</p>
+          <p>
+            I supported product teams by translating user needs into clean,
+            usable interfaces. I created wireframes and interactive prototypes,
+            ran quick usability tests, and handed off developer-ready specs. My
+            work focused on accessibility, consistency, and reducing friction in
+            key user flows.
+          </p>
+          <p>
+            <strong
+              >Highlights: user research & task flows • Figma
+              wireframes/prototypes • component library & style guide •
+              accessibility (alt text, contrast) • design handoff</strong
+            >
+          </p>
+
+          <small class="text-muted d-block mb-1"
+            ><i class="bi bi-tools me-1"></i>Tech stack</small
+          >
+          <div class="tech-badges">
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-bezier2 me-1"></i>Figma</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-bezier me-1"></i>Wireframing</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-cursor-text me-1"></i>Prototyping</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-filetype-html me-1"></i>HTML5</span
+            >
+            <span class="badge text-bg-light border"
+              ><i class="bi bi-filetype-css me-1"></i>CSS3</span
+            >
+          </div>
+        </li>
+
+        <!-- Associate Web Developer -->
+        <li class="list-group-item">
+          <img
+            src="./assets/TechMhyd.jpg"
+            alt="Tech Mahindra – Associate Web Developer"
+            class="img-fluid work-img"
+          />
+          <h5>Associate Web Developer</h5>
+          <p><strong>Dec 2021 – Nov 2022</strong></p>
+          <p>Tech Mahindra Private Limited – Hyderabad</p>
+          <p>
+            I built responsive, cross-client HTML email templates for the COSELA
+            brand and marketing campaigns. I hand-coded table-based layouts with
+            inline CSS, optimized images, and validated rendering across
+            Outlook, Gmail, and Apple Mail. I also added tracking parameters and
+            preheaders to improve deliverability and engagement.
+          </p>
+          <p>
+            <strong
+              >Highlights: HTML/CSS email builds • responsive/dark-mode safe •
+              QA in Litmus/Email on Acid • alt text & preheader strategy • UTM
+              tagging • asset optimization</strong
+            >
+          </p>
+
+          <small class="text-muted d-block mb-1"
+            ><i class="bi bi-tools me-1"></i>Tech stack</small
+          >
+          <div class="tech-badges">
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-filetype-html me-1"></i>HTML Email</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-filetype-css me-1"></i>CSS</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-phone me-1"></i>Responsive</span
+            >
+            <span class="badge text-bg-light border"
+              ><i class="bi bi-bug me-1"></i>QA/Litmus</span
+            >
+          </div>
+        </li>
+
+        <!-- Full Stack Developer -->
+        <li class="list-group-item">
+          <img
+            src="./assets/M3Solutions.jpg"
+            alt="M3 Solutions – Full Stack Developer"
+            class="img-fluid work-img"
+          />
+          <h5>Full Stack Developer</h5>
+          <p><strong>Dec 2022 – Mar 2024</strong></p>
+          <p>M3 Solutions – Hyderabad</p>
+          <p>
+            I developed and maintained MERN applications, including a
+            task-management app for a manufacturing client. I built REST APIs,
+            secured routes with JWT, and improved app performance through
+            pagination, caching, and MongoDB indexing—contributing to ~30%
+            faster views on key pages. Code quality was enforced with Jest tests
+            and reusable components.
+          </p>
+          <p>
+            <strong
+              >Highlights: React components & hooks • Node/Express APIs •
+              MongoDB schemas & indexes • JWT auth • Jest unit tests •
+              performance tuning (lazy loading, pagination)</strong
+            >
+          </p>
+
+          <small class="text-muted d-block mb-1"
+            ><i class="bi bi-tools me-1"></i>Tech stack</small
+          >
+          <div class="tech-badges">
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-react me-1"></i>React</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-node-plus me-1"></i>Node.js</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-diagram-3 me-1"></i>Express</span
+            >
+            <span class="badge text-bg-light border me-1"
+              ><i class="bi bi-database me-1"></i>MongoDB</span
+            >
+            <span class="badge text-bg-light border"
+              ><i class="bi bi-check2-square me-1"></i>Jest</span
+            >
+          </div>
+        </li>
       </ul>
-    </div>
-  </div>
-</nav>
+    </section>
 
-  <header id="home" class="text-white text-center">
-  <div class="container-fluid px-0">   <!-- full width, no gutters -->
-    <img src="./assets/HeaderImage.png"
-         alt="Pardha Saradhi Tanakala — MERN Stack Developer"
-         class="w-100 d-block hero-banner">
-  </div>
-
-  <div class="py-4">
-    <h1 class="display-5 mb-1">Pardha Saradhi Tanakala</h1>
-    <p class="lead mb-0">Explore my projects and skills</p>
-  </div>
-</header>
-
-   <section id="about" class="container my-6">
-  <h2>About Me</h2>
-  <div class="row align-items-center g-4">
-    <div class="col-lg-4 text-center">
-      <!-- Optional profile photo -->
-      <img src="./assets/Pardhu-Profile.jpeg" alt="Portrait of Pardha Saradhi Tanakala" class="about-avatar img-fluid">
-    </div>
-
-    <div class="col-lg-8">
-      <p>
-        I’m <strong>Pardha Saradhi Tanakala</strong>, a full-stack developer focused on building scalable,
-        user-friendly web apps with the <strong>MERN</strong> stack. I care about clean UI, accessible UX, and
-        performance—turning requirements into reliable, production-ready features.
-      </p>
-
-      <p>
-        Recently, I’ve been sharpening my skills in component design, API development, and testing.
-        I enjoy collaborating with teams, writing maintainable code, and deploying apps that are easy to
-        monitor and iterate on.
-      </p>
-
-      <div class="row">
-        <div class="col-md-6">
-          <ul class="mb-3">
-            <li><strong>Core Stack:</strong> React, Node.js, Express, MongoDB</li>
-            <li><strong>Front-end:</strong> HTML5, CSS3, Bootstrap, responsive design</li>
-            <li><strong>Back-end:</strong> REST APIs, auth with JWT, data modeling</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul class="mb-3">
-            <li><strong>Quality:</strong> Jest testing, code reviews, perf tuning</li>
-            <li><strong>Tools:</strong> Git/GitHub, Postman, VS Code</li>
-            <li><strong>Current Focus:</strong> Netlify/Vercel deploys, CI/CD, Docker basics</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="d-flex flex-wrap gap-2 mt-2 mb-4">
-        <a class="btn btn-primary btn-sm" href="./assets/Pardha_Saradhi_Tanakala_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-        <a class="btn btn-outline-secondary btn-sm" href="mailto:pardhutanakala321@gmail.com">Email Me</a>
-        <a class="btn btn-outline-secondary btn-sm" href="https://github.com/Pardhu7096" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-outline-secondary btn-sm" href="https://www.linkedin.com/in/pardha-saradhi-tanakala-93049a333" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-   <section id="skills" class="container my-5">
-  <h2>Skills</h2>
-
-  <div class="row g-4">
-    <!-- Frontend -->
-    <div class="col-md-6">
-      <h6 class="text-uppercase text-muted mb-2">Frontend</h6>
-      <div class="d-flex flex-wrap gap-2">
-        <span class="skill-badge" title="HTML5"><i class="bi bi-filetype-html"></i> HTML5</span>
-        <span class="skill-badge" title="CSS3"><i class="bi bi-filetype-css"></i> CSS3</span>
-        <span class="skill-badge" title="JavaScript ES6+"><i class="bi bi-braces"></i> JavaScript (ES6+)</span>
-        <span class="skill-badge" title="React"><i class="bi bi-react"></i> React</span>
-        <span class="skill-badge" title="Bootstrap"><i class="bi bi-bootstrap-fill"></i> Bootstrap</span>
-      </div>
-    </div>
-
-    <!-- Backend -->
-    <div class="col-md-6">
-      <h6 class="text-uppercase text-muted mb-2">Backend</h6>
-      <div class="d-flex flex-wrap gap-2">
-        <span class="skill-badge" title="Node.js"><i class="bi bi-node-plus"></i> Node.js</span>
-        <span class="skill-badge" title="Express.js"><i class="bi bi-diagram-3"></i> Express</span>
-        <span class="skill-badge" title="MongoDB"><i class="bi bi-database"></i> MongoDB</span>
-        <span class="skill-badge" title="JWT Auth"><i class="bi bi-shield-lock"></i> JWT</span>
-        <span class="skill-badge" title="Git & GitHub"><i class="bi bi-git"></i> Git/GitHub</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Proficiency bars -->
-  <div class="mt-4">
-    <h6 class="text-uppercase text-muted mb-2">Proficiency</h6>
-
-    <div class="mb-3">
-      <small class="d-flex justify-content-between"><span>React</span><span>80%</span></small>
-      <div class="progress" role="progressbar" aria-label="React proficiency">
-        <div class="progress-bar" style="width: 80%"></div>
-      </div>
-    </div>
-
-    <div class="mb-3">
-      <small class="d-flex justify-content-between"><span>Node.js</span><span>75%</span></small>
-      <div class="progress" role="progressbar" aria-label="Node.js proficiency">
-        <div class="progress-bar" style="width: 75%"></div>
-      </div>
-    </div>
-
-    <div class="mb-1">
-      <small class="d-flex justify-content-between"><span>MongoDB</span><span>70%</span></small>
-      <div class="progress" role="progressbar" aria-label="MongoDB proficiency">
-        <div class="progress-bar" style="width: 70%"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-   <section id="work-experience" class="container my-5">
-  <h2>Work Experience</h2>
-  <ul class="list-group">
-
-    <!-- UI/UX Designer Trainee -->
-    <li class="list-group-item">
-      <img src="./assets/TMF.jpeg" alt="Tech Mahindra Foundation – UI/UX Designer Trainee" class="img-fluid work-img">
-      <h5>UI/UX Designer Trainee</h5>
-      <p><strong>Feb 2021 – Nov 2021</strong></p>
-      <p>Tech Mahindra Foundation – Visakhapatnam</p>
-      <p>I supported product teams by translating user needs into clean, usable interfaces. 
-        I created wireframes and interactive prototypes, ran quick usability tests,
-         and handed off developer-ready specs. My work focused on accessibility, consistency, and reducing friction in key user flows.</p>
-         <p><strong>Highlights: user research & task flows • Figma wireframes/prototypes • component library & style guide • accessibility (alt text, contrast) • design handoff</strong></p>
-
-      <small class="text-muted d-block mb-1"><i class="bi bi-tools me-1"></i>Tech stack</small>
-      <div class="tech-badges">
-        <span class="badge text-bg-light border me-1"><i class="bi bi-bezier2 me-1"></i>Figma</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-bezier me-1"></i>Wireframing</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-cursor-text me-1"></i>Prototyping</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-filetype-html me-1"></i>HTML5</span>
-        <span class="badge text-bg-light border"><i class="bi bi-filetype-css me-1"></i>CSS3</span>
-      </div>
-    </li>
-
-    <!-- Associate Web Developer -->
-    <li class="list-group-item">
-      <img src="./assets/TechMhyd.jpg" alt="Tech Mahindra – Associate Web Developer" class="img-fluid work-img">
-      <h5>Associate Web Developer</h5>
-      <p><strong>Dec 2021 – Nov 2022</strong></p>
-      <p>Tech Mahindra Private Limited – Hyderabad</p>
-      <p>I built responsive, cross-client HTML email templates for the COSELA brand and marketing campaigns. I hand-coded table-based layouts with inline CSS, 
-        optimized images, and validated rendering across Outlook, Gmail, and Apple Mail. 
-        I also added tracking parameters and preheaders to improve deliverability and engagement.</p>
-        <p><strong>Highlights: HTML/CSS email builds • responsive/dark-mode safe • QA in Litmus/Email on Acid • alt text & preheader strategy • UTM tagging • asset optimization</strong></p>
-
-      <small class="text-muted d-block mb-1"><i class="bi bi-tools me-1"></i>Tech stack</small>
-      <div class="tech-badges">
-        <span class="badge text-bg-light border me-1"><i class="bi bi-filetype-html me-1"></i>HTML Email</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-filetype-css me-1"></i>CSS</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-phone me-1"></i>Responsive</span>
-        <span class="badge text-bg-light border"><i class="bi bi-bug me-1"></i>QA/Litmus</span>
-      </div>
-    </li>
-
-    <!-- Full Stack Developer -->
-    <li class="list-group-item">
-      <img src="./assets/M3Solutions.jpg" alt="M3 Solutions – Full Stack Developer" class="img-fluid work-img">
-      <h5>Full Stack Developer</h5>
-      <p><strong>Dec 2022 – Mar 2024</strong></p>
-      <p>M3 Solutions – Hyderabad</p>
-      <p>I developed and maintained MERN applications, including a task-management app for a manufacturing client. I built REST APIs, secured routes with JWT, and improved app performance through pagination, caching, and MongoDB indexing—contributing to ~30% faster views on key pages. 
-        Code quality was enforced with Jest tests and reusable components.</p>
-        <p><strong>Highlights: React components & hooks • Node/Express APIs • MongoDB schemas & indexes • JWT auth • Jest unit tests • performance tuning (lazy loading, pagination)</strong></p>
-
-      <small class="text-muted d-block mb-1"><i class="bi bi-tools me-1"></i>Tech stack</small>
-      <div class="tech-badges">
-        <span class="badge text-bg-light border me-1"><i class="bi bi-react me-1"></i>React</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-node-plus me-1"></i>Node.js</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-diagram-3 me-1"></i>Express</span>
-        <span class="badge text-bg-light border me-1"><i class="bi bi-database me-1"></i>MongoDB</span>
-        <span class="badge text-bg-light border"><i class="bi bi-check2-square me-1"></i>Jest</span>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-<section id="projects" class="container my-5">
-  <h2>My Projects</h2>
-  <div class="row g-4 card-equal">
-
-    <!-- Expense Tracker -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/expenseTracker.jpg" class="card-img-top" alt="Expense Tracker – React app with charts and categories">
-        <div class="card-body">
-          <h5 class="card-title">Expense Tracker</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>Log expenses, categorize spending, and view chart-based summaries.</li>
-            <li>Instant UI updates via React state; local persistence for sessions.</li>
-            <li>Responsive UI for seamless desktop & mobile use.</li>
-          </ul>
-          <div class="collapse" id="exp-more">
-            <ul class="mb-3 ps-3">
-              <li>Reusable components, prop-driven charts, and date-range filters.</li>
-              <li>Input validation and empty-state UX.</li>
-            </ul>
-          </div>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <a href="https://github.com/Pardhu7096/ET_React" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
-              <!-- Optional Live Demo -->
-              <!-- <a href="https://your-live-link.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a> -->
+    <section id="projects" class="container my-5">
+      <h2>My Projects</h2>
+      <div class="row g-4 card-equal">
+        <!-- Expense Tracker -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/expenseTracker.jpg"
+              class="card-img-top"
+              alt="Expense Tracker – React app with charts and categories"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Expense Tracker</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>
+                  Log expenses, categorize spending, and view chart-based
+                  summaries.
+                </li>
+                <li>
+                  Instant UI updates via React state; local persistence for
+                  sessions.
+                </li>
+                <li>Responsive UI for seamless desktop & mobile use.</li>
+              </ul>
+              <div class="collapse" id="exp-more">
+                <ul class="mb-3 ps-3">
+                  <li>
+                    Reusable components, prop-driven charts, and date-range
+                    filters.
+                  </li>
+                  <li>Input validation and empty-state UX.</li>
+                </ul>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a
+                    href="https://github.com/Pardhu7096/ET_React"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-outline-secondary btn-sm"
+                    >GitHub</a
+                  >
+                  <!-- Optional Live Demo -->
+                  <!-- <a href="https://your-live-link.com" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a> -->
+                </div>
+                <button
+                  class="btn btn-link p-0"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#exp-more"
+                  aria-expanded="false"
+                >
+                  Read more
+                </button>
+              </div>
             </div>
-            <button class="btn btn-link p-0" data-bs-toggle="collapse" data-bs-target="#exp-more" aria-expanded="false">Read more</button>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- To-Do List -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/todolist.jpg" class="card-img-top" alt="To-Do List – React productivity app">
-        <div class="card-body">
-          <h5 class="card-title">To-Do List</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>Create, edit, delete tasks; set deadlines and track progress.</li>
-            <li>Filter & search for quick organization; real-time UI updates.</li>
-            <li>Clean, intuitive interface optimized for productivity.</li>
-          </ul>
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="btn-group">
-              <a href="https://github.com/Pardhu7096/React-Todo" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
+        <!-- To-Do List -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/todolist.jpg"
+              class="card-img-top"
+              alt="To-Do List – React productivity app"
+            />
+            <div class="card-body">
+              <h5 class="card-title">To-Do List</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>
+                  Create, edit, delete tasks; set deadlines and track progress.
+                </li>
+                <li>
+                  Filter & search for quick organization; real-time UI updates.
+                </li>
+                <li>Clean, intuitive interface optimized for productivity.</li>
+              </ul>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a
+                    href="https://github.com/Pardhu7096/React-Todo"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-outline-secondary btn-sm"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tic-Tac-Toe Game -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/TicTacToe.jpg"
+              class="card-img-top"
+              alt="Tic-Tac-Toe – React game"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tic-Tac-Toe Game</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>Player turns, winner detection, and board reset.</li>
+                <li>Logic with React hooks; clean state transitions.</li>
+                <li>Responsive layout for desktop and mobile.</li>
+              </ul>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/Pardhu7096/React---Tic-Tac-Toe-Game"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-secondary btn-sm"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather App -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/weather.jpg"
+              class="card-img-top"
+              alt="Weather App – React + OpenWeatherMap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Weather App</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>
+                  City search with current temp, conditions, humidity, wind.
+                </li>
+                <li>OpenWeatherMap API integration with error handling.</li>
+                <li>Dynamic backgrounds that reflect the weather.</li>
+              </ul>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/Pardhu7096/Weather-App"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-secondary btn-sm"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Construction Website -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/Construction.jpg"
+              class="card-img-top"
+              alt="Construction Website – responsive Bootstrap site"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Construction Website</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>
+                  Modern, responsive site with services, projects, testimonials.
+                </li>
+                <li>Contact form, smooth navigation, optimized images.</li>
+                <li>Clean, industry-aligned layout for stronger engagement.</li>
+              </ul>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/Pardhu7096/Construction-Website"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-secondary btn-sm"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sign-In Page -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img
+              src="./assets/Signin.jpg"
+              class="card-img-top"
+              alt="Sign-In Page – MERN auth with JWT"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sign-In Page</h5>
+              <ul class="card-text mb-3 ps-3">
+                <li>
+                  Secure auth: sign-up, login, password reset, sessions via JWT.
+                </li>
+                <li>
+                  React frontend; Node/Express backend; MongoDB persistence.
+                </li>
+                <li>Validation, bcrypt hashing, and robust error handling.</li>
+              </ul>
+              <div class="btn-group">
+                <a
+                  href="https://github.com/Pardhu7096/Sign-in"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-secondary btn-sm"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Tic-Tac-Toe Game -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/TicTacToe.jpg" class="card-img-top" alt="Tic-Tac-Toe – React game">
-        <div class="card-body">
-          <h5 class="card-title">Tic-Tac-Toe Game</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>Player turns, winner detection, and board reset.</li>
-            <li>Logic with React hooks; clean state transitions.</li>
-            <li>Responsive layout for desktop and mobile.</li>
-          </ul>
-          <div class="btn-group">
-            <a href="https://github.com/Pardhu7096/React---Tic-Tac-Toe-Game" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Weather App -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/weather.jpg" class="card-img-top" alt="Weather App – React + OpenWeatherMap">
-        <div class="card-body">
-          <h5 class="card-title">Weather App</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>City search with current temp, conditions, humidity, wind.</li>
-            <li>OpenWeatherMap API integration with error handling.</li>
-            <li>Dynamic backgrounds that reflect the weather.</li>
-          </ul>
-          <div class="btn-group">
-            <a href="https://github.com/Pardhu7096/Weather-App" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Construction Website -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/Construction.jpg" class="card-img-top" alt="Construction Website – responsive Bootstrap site">
-        <div class="card-body">
-          <h5 class="card-title">Construction Website</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>Modern, responsive site with services, projects, testimonials.</li>
-            <li>Contact form, smooth navigation, optimized images.</li>
-            <li>Clean, industry-aligned layout for stronger engagement.</li>
-          </ul>
-          <div class="btn-group">
-            <a href="https://github.com/Pardhu7096/Construction-Website" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sign-In Page -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="./assets/Signin.jpg" class="card-img-top" alt="Sign-In Page – MERN auth with JWT">
-        <div class="card-body">
-          <h5 class="card-title">Sign-In Page</h5>
-          <ul class="card-text mb-3 ps-3">
-            <li>Secure auth: sign-up, login, password reset, sessions via JWT.</li>
-            <li>React frontend; Node/Express backend; MongoDB persistence.</li>
-            <li>Validation, bcrypt hashing, and robust error handling.</li>
-          </ul>
-          <div class="btn-group">
-            <a href="https://github.com/Pardhu7096/Sign-in" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm">GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <section id="contact" class="container my-5">
-        <h2>Contact Me</h2>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+      <h2>Contact Me</h2>
+      <!-- HERO with background image + text overlay -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  <p class="visually-hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+  </p>
+
+  <!-- your existing fields -->
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input id="name" name="name" type="text" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input id="email" name="email" type="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea id="message" name="message" rows="3" class="form-control" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
     </section>
     <footer class="bg-light text-center py-4">
-        <p>&copy; 2023 Pardhu. All rights reserved.</p>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-    </footer>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <p>&copy; 2023 Pardhu. All rights reserved.</p>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/yourkitid.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./Sandbox.js"></script>
-    
-</body>
+  </body>
 </html>
